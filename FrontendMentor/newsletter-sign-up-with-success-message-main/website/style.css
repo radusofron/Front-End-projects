@@ -1,0 +1,159 @@
+/* Add fonts */
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Roboto;
+}
+
+:root{
+    --tomato: hsl(4, 100%, 67%);
+    --orange: hsl(14, 100%, 62%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --fs-title: 48px;
+    --fs-description: 16px;
+    --fs-details: 12px;
+    --fw-bold: 700;
+    --fw-medium: 400;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--charcoal-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NEWSLETTER */
+main{
+    width: fit-content;
+    padding: 25px 25px 25px 50px;
+    border-radius: 25px;
+    background-color: var(--white);
+    display: flex;
+    gap: 50px;
+}   
+/* Font size */
+main h2{
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+}
+main p, li, input[type=text], input[type=text]::placeholder{
+    font-size: var(--fs-description);
+    font-weight: var(--fw-medium);
+}
+main label{
+    font-size: var(--fs-details);
+    font-weight: var(--fw-bold);
+}
+main button[type=submit]{
+    font-size: var(--fs-description);
+    font-weight: var(--fw-bold);
+}
+/* Left side */
+section.content{
+    width: 400px;
+    margin: 75px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2{
+    color: var(--dark-slate-grey);
+}
+p{
+    color: var(--dark-slate-grey);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li{
+    color: var(--dark-slate-grey);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label{
+    color: var(--dark-slate-grey);
+}
+form input[type=text]{
+    padding: 15px 25px;
+    outline: 1px solid var(--grey);
+    border-radius: 5px;
+    transition: 200ms;
+}
+form input[type=text]:hover{
+    outline: 1px solid var(--dark-slate-grey);
+}
+form input[type=text]:focus{
+    outline: 1px solid var(--dark-slate-grey);
+    color: var(--dark-slate-grey)
+}
+form button[type=submit]{
+    margin-top: 10px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: var(--white);    
+    background: var(--dark-slate-grey);
+    cursor: pointer;
+}
+form button[type=submit]:hover{
+    background: linear-gradient(to right, var(--tomato), var(--orange));
+}
+
+
+/* SUCCESS */
+div.success{
+    width: 20%;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;  
+}
+div.success img{
+    height: 50px;
+    width: 50px;
+}
+div,.success h2{
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    color: var(--dark-slate-grey);
+}
+div.success p{
+    font-size: var(--fs-description);
+    font-weight: var(--fw-medium);
+    color: var(--dark-slate-grey);
+    line-height: 175%;
+}
+div.success button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: var(--fs-description);
+    font-weight: var(--fw-bold);
+    color: var(--white);
+    background: var(--dark-slate-grey);
+    cursor: pointer;
+}
+div.success button:hover{
+    background: linear-gradient(to right, var(--tomato), var(--orange));
+}
