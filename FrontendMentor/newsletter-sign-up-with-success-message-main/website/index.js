@@ -1,14 +1,22 @@
-// Extract button, form & add event listener
-const submitButton = document.getElementById("submit")
+// Extract form
 const form = document.getElementById("form")
-submitButton.addEventListener("click", function() {
+// Extract input
+const inputElement = document.getElementById("email")
+// Extract error message
+const errorMessage = document.getElementById("error")
+
+// Add event listener for form
+form.addEventListener("submit", function(ev) {
     // Extract email
-    const inputElement = document.getElementById("email")
     const inputEmail = inputElement.value
     // Create regex
     const emailPattern = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/)
     // Verify email format
-    if(emailPattern.test(inputEmail)) {
-        form.setAttribute("action", "success.html")
+    if(!emailPattern.test(inputEmail)) {
+        // Display error
+        inputElement.classList.add("error")
+        errorMessage.classList.add("true")
+        // Pass default form action
+        ev.preventDefault()
     }
 })

@@ -14,6 +14,7 @@
 
 :root{
     --tomato: hsl(4, 100%, 67%);
+    --tomato-10: hsl(4, 100%, 67%, 10%); 
     --orange: hsl(14, 100%, 62%);
     --dark-slate-grey: hsl(234, 29%, 20%);
     --charcoal-grey: hsl(235, 18%, 26%);
@@ -27,14 +28,15 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background-color: var(--charcoal-grey);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* NEWSLETTER */
+/* NEWSLETTER DEFAULT */
 main{
     width: fit-content;
     padding: 25px 25px 25px 50px;
@@ -93,6 +95,11 @@ form{
 }
 form label{
     color: var(--dark-slate-grey);
+    display: flex;
+    justify-content: space-between;
+}
+form label span{
+    display: none;
 }
 form input[type=text]{
     padding: 15px 25px;
@@ -120,9 +127,25 @@ form button[type=submit]:hover{
 }
 
 
+/* NEWSLETTER ERROR */
+form input[type=text].error{
+    outline-color: var(--tomato);
+    color: var(--tomato);
+    background-color: var(--tomato-10);
+}
+form input[type=text].error::placeholder{
+    color: var(--tomato);
+}
+form label span.true{
+    display: inline;
+    color: var(--tomato);
+}
+
+
 /* SUCCESS */
 div.success{
     width: 20%;
+    min-width: 400px;
     padding: 50px;
     border-radius: 25px;
     background-color: var(--white);
@@ -156,4 +179,12 @@ div.success button{
 }
 div.success button:hover{
     background: linear-gradient(to right, var(--tomato), var(--orange));
+}
+
+
+/* RESPONSIVE */
+@media(max-height: 600px){
+    body{
+        margin: 50px 0px;
+    }
 }
