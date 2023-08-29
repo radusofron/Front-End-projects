@@ -31,7 +31,8 @@ body{
 }
 
 section{
-    width: 475px;
+    width: 100%;
+    max-width: 475px;
     padding: 15px;
     border-radius: 10px;
     background-color: var(--white);
@@ -113,10 +114,10 @@ li .details p{
     font-weight: var(--fw-bold);
     color: var(--dark-blue);
 }
-li.current h4{
+li.current .details h4{
     color: var(--white);
 }
-li.current p{
+li.current .details p{
     font-weight: var(--fw-light);
     color: var(--white);
 }
