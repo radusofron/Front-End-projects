@@ -10,7 +10,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Screenshots](#screenshots)
   - [1920 x 1080](#1920-x-1080)
   - [1280 x 720](#1280-x-720)
-  - [375 x 750](#375-x-750)
+  - [375 x 667](#375-x-667)
 
 ## The challenge
 
@@ -66,4 +66,12 @@ Files can be found in **website** directory.
 
 ![](./design/my-design/1280x720/desktop-success.png)
 
-### 375 x 750
+### 375 x 667
+
+![](./design/my-design/375x667/mobile-design.png)
+
+![](./design/my-design/375x667/mobile-active-states.png)
+
+![](./design/my-design/375x667/mobile-error-states.png)
+
+![](./design/my-design/375x667/mobile-success.png)
