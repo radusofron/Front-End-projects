@@ -21,6 +21,7 @@
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
     --fs-title: 48px;
+    --fs-phone-title: 32px;
     --fs-description: 16px;
     --fs-details: 12px;
     --fw-bold: 700;
@@ -183,8 +184,55 @@ div.success button:hover{
 
 
 /* RESPONSIVE */
+img.hide{
+    display: none;
+}
 @media(max-height: 600px){
     body{
         margin: 50px 0px;
+    }
+}
+@media(max-width: 1000px){
+    body{
+        height: 100%;
+        margin: 0px;
+        align-items: flex-start;
+    }
+
+    /* NEWSLETTER */
+    main{
+        width: 375px;
+        padding: 0px;
+        border-radius: 0px;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    section.content{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px;
+        margin: 0px;
+        gap: 25px;
+    }
+    main h2{
+        font-size: var(--fs-phone-title);
+    }
+    li{
+        align-items: flex-start;
+    }
+
+    /* SUCCESS */
+    div.success{
+        box-sizing: border-box;
+        width: 375px;
+        min-width: 375px;
+        padding: 100px 25px 25px 25px;
+        border-radius: 0px;
+    }
+    div,.success h2{
+        font-size: var(--fs-phone-title);
+    }
+    div.success button{
+        margin-top: 200px;
     }
 }
