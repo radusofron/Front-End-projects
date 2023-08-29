@@ -1,4 +1,4 @@
-# Challenge: UI Kit
+# Challenge: Mobile Movie Ad
 
 ### The challenge
 

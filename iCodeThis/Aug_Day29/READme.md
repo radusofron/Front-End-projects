@@ -1,4 +1,4 @@
-# Challenge: UI Kit
+# Challenge: Playlist
 
 ### The challenge
 

@@ -1,4 +1,4 @@
-# Challenge: UI Kit
+# Challenge: Check In
 
 ### The challenge
 
