@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+:root{
+    --coral: #FC4184;
+    --background-pink: #EDC5E7;
+    --outline-pink: #AC82DB;
+    --dark-purple: #5F38A7;
+    --purple: #6E47B8;
+    --light-purple: #7E58C2;
+    --outline-purple: #9C78D0;
+    --details-purple: #CEBAF8;
+    --grey: #F8F5FD;
+    --fs-subtitle: 15px;
+    --fs-big-paragraph: 12px;
+    --fs-small-paragraph: 11px;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-light: 400;
+}
+
+body{
+    padding: 100px;
+    background-color: var(--background-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Left panel */
+aside{
+    position: relative;
+    width: 350px;
+    box-shadow: 0px 12px 50px 12px var(--outline-pink);
+}
+aside .icons-container{
+    background-color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+}
+aside .icons-container svg{
+    margin: 20px;
+}
+aside .icons-container .agenda-container{
+    background-color: var(--light-purple);
+}
+aside ul{
+    list-style: none;
+    background: linear-gradient(to bottom, var(--dark-purple), var(--light-purple) 5%);
+    overflow-x: hidden;
+}
+aside ul li{
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+aside ul li.active{
+    background-color: var(--dark-purple);
+    box-shadow: 0px 5px 15px 0px var(--dark-purple);
+}
+aside ul li img{
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    border: 3px solid var(--outline-purple);
+    border-radius: 50%;
+    object-fit: cover;
+}
+aside ul li .text-container{
+    width: 100%;
+}
+aside ul li .name{
+    margin-bottom: 5px;
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-semibold);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+aside ul li .name .notification{
+    padding: 0px 6px;
+    font-size: var(--fs-big-paragraph);
+    border-radius: 50%;
+    background-color: var(--coral);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside ul li .message{
+    font-size: var(--fs-small-paragraph);
+    font-weight: var(--fw-light);
+    color: white;
+}
+aside ul li .hour{
+    font-size: var(--fs-big-paragraph);
+    font-weight: var(--fw-light);
+    color: var(--details-purple);
+}
+aside .pen-container{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 0px var(--dark-purple);
+    background-color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+aside .pen-container svg{
+    margin: 18px;
+}
+/* Right panel */
+section{
+    width: 450px;
+    padding: 40px 0px 0px 0px;
+    box-shadow: 0px 10px 20px 0px var(--outline-pink);
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section .day{
+    position: relative;
+    align-self: center;
+    font-size: var(--fs-big-paragraph);
+    font-weight: var(--fw-light);
+    color: var(--details-purple);
+}
+section .day::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 25px;
+    height: 1px;
+    background-color: var(--details-purple);
+}
+section .day::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 25px;
+    height: 1px;
+    background-color: var(--details-purple);
+}
+section .messsage-container{
+    margin: 0px 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+section .messsage-container img{
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+section .messsage-container .text{
+    padding: 5px 10px;
+    font-size: var(--fs-big-paragraph);
+    font-weight: var(--fw-light);
+    background-color: white;
+}
+section form{
+    display: flex;
+}
+section form input[type=text]{
+    flex-basis: 100%;
+    padding: 20px 40px;
+}
+section form input[type=text]:focus{
+    outline: none;
+}
+section form input[type=text]::placeholder{
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-light);
+}
+section form .send-container{
+    padding: 20px;
+    background-color: white;
+    cursor: pointer;
+}
