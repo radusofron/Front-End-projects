@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Epilogue', sans-serif;
+}
+
+:root{
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-grey: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+    --fs-header: 12px;
+    --fs-paragraph: 18px;
+    --fs-title: 63px;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
+
+body{
+    background-color: var(--almost-white);
+}
+
+/* HEADER */
+header{
+    padding: 30px 45px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul.menu-list{
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+header nav ul.menu-list li.menu-option{
+    position: relative;
+    font-size: var(--fs-header);
+    font-weight: var(--fw-medium);
+    color: var(--medium-grey);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 300ms;
+}
+header nav ul.menu-list li.menu-option:hover{
+    color: var(--almost-black);
+}
+header nav ul.menu-list li.menu-option ul.features-list{
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    list-style: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -10px var(--medium-grey);
+    background-color: var(--almost-white);
+}
+#features, #company{
+    cursor: pointer;
+}
+ul.menu-list li.menu-option img#features-down, img#features-up, img#company-down, img#company-up{
+    display: none;
+}
+ul.menu-list li.menu-option img#features-down.active, img#features-up.active, img#company-down.active, img#company-up.active{
+    display: block;
+}
+ul.features-list li.features-option{
+    margin: 12.5px;
+    font-size: var(--fs-header);
+    font-weight: var(--medium);
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header nav ul.menu-list li.menu-option ul.company-list{
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    list-style: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -10px var(--medium-grey);
+    background-color: var(--almost-white);
+}
+ul.company-list li.company-option{
+    margin: 12.5px;
+    font-size: var(--fs-header);
+    font-weight: var(--medium);
+    color: var(--grey);
+}
+ul.company-list li.company-option a{
+    white-space: nowrap;
+}
+header nav a{
+    text-decoration: none;
+    font-size: var(--fs-header);
+    font-weight: var(--fw-medium);
+    color: var(--medium-grey);
+    transition: 300ms;
+}
+header nav a:hover{
+    color: var(--almost-black);
+}
+header nav div.account-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+header nav div.account-list .register{
+    padding: 10px 20px;
+    border: 2px solid var(--medium-grey);
+    border-radius: 10px;
+    transition: 300ms;
+}
+header nav div.account-list .register:hover{
+    border: 2px solid var(--almost-black);
+}
+.features-list, .company-list{
+    display: none;
+}
+.features-list.active, .company-list.active{
+    display: block;
+}
+
+/* HIRO */
+main{
+    padding: 0px 125px 0px 175px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 175px;
+}
+section.left-container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.left-container .text{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+section.left-container .text h2{
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    color: var(--almost-black);
+}
+section.left-container .text p{
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-medium);
+    color: var(--medium-grey);
+    line-height: 150%;
+}
+section.left-container .text a{
+    align-self: flex-start;
+    padding: 15px 30px;
+    border: 2px solid var(--almost-black);
+    border-radius: 15px;
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+    transition: 300ms;
+}
+section.left-container .text a:hover{
+    background-color: var(--almost-white);
+    color: var(--almost-black);
+}
+section.left-container .clients{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.right-container{
+    max-width: 100%;
+    width: 512px;
+    min-width: 512px;
+}
+section.right-container img{
+    width: 100%;
+    height: 100%;
+}
