@@ -25,7 +25,7 @@
     --fs-description: 16px;
     --fs-details: 12px;
     --fw-bold: 700;
-    --fw-medium: 400;
+    --fw-regular: 400;
 }
 
 body{
@@ -53,7 +53,7 @@ main h2{
 }
 main p, li, input[type=text], input[type=text]::placeholder{
     font-size: var(--fs-description);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
 }
 main label{
     font-size: var(--fs-details);
@@ -165,7 +165,7 @@ div,.success h2{
 }
 div.success p{
     font-size: var(--fs-description);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     color: var(--dark-slate-grey);
     line-height: 175%;
 }

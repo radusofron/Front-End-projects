@@ -19,6 +19,10 @@
 
 ## Typography
 
+### Font Family
+
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+
 ### Font Size
 
 - Sizes: 48px, 16px, 12px
@@ -26,12 +30,8 @@
 - Description: 16px
 - Details: 12px
 
-### Font Family
-
-- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
-
 ### Font Weights
 
 - Weights: 400, 700
 - Bold: 700
-- Medium: 400
+- Regular: 400
