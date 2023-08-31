@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+:root{
+    --background-blue: #7AADFB;
+    --background-purple: #B057FF;
+    --purple:#6255D1;
+    --light-grey: #F7F7F7;
+    --medium-grey: #636363;
+    --dark-grey: #4E4E4E;
+    --yellow: #FEEA8E;
+    --medium-blue: #7796FF;
+    --dark-blue: #56668E;
+    --white-50: hsl(0,0%,100%, 50%);
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --fs-title: 1.5rem;
+    --fs-subtitle: .85rem;
+    --fs-button: 1rem;
+}
+
+body{
+    min-height: 100vh;
+    padding: 10vh 15vw;
+    background: linear-gradient(to right, var(--background-blue) 40%, var(--background-purple));
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    align-items: center;
+}
+ol.steps{
+    padding: 0rem 4rem 5vh 4rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+ol.steps li.step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+ol.steps li.step .icon-container{
+    position: relative;
+    padding: 0.35rem;
+    border: 0.35rem solid var(--medium-blue);
+    border-radius: 50%;
+}
+ol.steps li.step .icon-container.yellow{
+    background-color: var(--yellow);
+}
+ol.steps li.step .icon-container.purple{
+    background-color: var(--purple);
+}
+ol.steps li.step .icon-container .checked-container{
+    position: absolute;
+    top: -0.25rem;
+    right: -25%;
+    padding: 0.1rem;
+    border-radius: 50%;
+    background-color: white;
+}
+ol.steps li.step p{
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-medium);
+    color: white;
+}
+ol.steps li.step.unavailable p{
+    color: var(--white-50);
+}
+main{
+    box-shadow: 0rem 0rem 2rem -1rem var(--medium-grey);
+    background-color: white;
+}
+main h2{
+    padding: 2rem;
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    color: var(--dark-grey);
+    text-align: center;
+}
+main .grid{
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+main .grid .interest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+main .grid .interest .image-container{
+    position: relative;
+}
+main .grid .interest .image-container .checked-interest{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--white-50);
+    cursor: pointer;
+    display: none;
+}
+main .grid .interest .image-container .checked-interest.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .grid .interest .image-container .checked-interest{
+    display: none;
+}
+main .grid .interest img{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+}
+main .grid .interest p{
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+}
+main form{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+main form button[type=submit]{
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: var(--fs-button);
+    font-weight: var(--fw-semibold);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: 250ms;
+}
+main form button[type=submit]:hover{
+    background-color: var(--light-grey);
+}
