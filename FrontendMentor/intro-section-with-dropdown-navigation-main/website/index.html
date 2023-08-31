@@ -21,12 +21,15 @@
 
   <header>
     <img src="../images/logo.svg">
-    <nav>
+    <nav id="nav">
+      <img id="close-menu" src="../images/icon-close-menu.svg">
       <ul class="menu-list">
         <li class="menu-option" id="features">
-          <a>Features</a>
-          <img id="features-down" class="active" src="../images/icon-arrow-down.svg">
-          <img id="features-up" src="../images/icon-arrow-up.svg">
+          <div class="for-mobile-container">
+            Features
+            <img id="features-down" class="active" src="../images/icon-arrow-down.svg">
+            <img id="features-up" src="../images/icon-arrow-up.svg">
+          </div>
           <ul class="features-list">
             <li class="features-option"><img src="../images/icon-todo.svg"><a href="index.html">Todo List</a></li>
             <li class="features-option"><img src="../images/icon-calendar.svg"><a href="index.html">Calendar</a></li>
@@ -35,9 +38,11 @@
           </ul>
         </li>
         <li class="menu-option" id="company">
-          Company
-          <img id="company-down" class="active" src="../images/icon-arrow-down.svg">
-          <img id="company-up" src="../images/icon-arrow-up.svg">
+          <div class="for-mobile-container">
+            Company
+            <img id="company-down" class="active" src="../images/icon-arrow-down.svg">
+            <img id="company-up" src="../images/icon-arrow-up.svg">
+          </div>
           <ul class="company-list">
             <li class="company-option"><a href="index.html">History</a></li>
             <li class="company-option"><a href="index.html">Our Team</a></li>
@@ -52,6 +57,7 @@
         <a class="register" href="index.html">Register</a>
       </div>
     </nav>
+    <img id="menu" src="../images/icon-menu.svg">
   </header>
 
   <main>
@@ -73,7 +79,8 @@
       </div>
     </section>
     <section class="right-container">
-      <img src="../images/image-hero-desktop.png">
+      <img id="desktop-image" src="../images/image-hero-desktop.png">
+      <img id="mobile-image" src="../images/image-hero-mobile.png">
     </section>
   </main>
 

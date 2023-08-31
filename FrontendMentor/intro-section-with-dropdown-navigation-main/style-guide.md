@@ -1,12 +1,5 @@
 # Front-end Style Guide
 
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
 ## Colors
 
 ### Neutral
@@ -17,11 +10,28 @@ The designs were created to the following widths:
 
 ## Typography
 
-### Body Copy
-
-- Font size (paragraph): 18px
-
-### Font
+### Font Family
 
 - Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
-- Weights: 500, 700
+
+### Font Size
+
+#### Destkop
+
+- Sizes: 72px, 18px, 12px
+- Title: 72px
+- Paragraph: 18px
+- Header: 12px
+
+#### Mobile
+
+- Sizes: 27px, 14px, 15px
+- Title: 27px
+- Paragraph: 14px
+- Header: 15px
+
+### Font Weights
+
+- Weights: 700, 500
+- Bold: 700
+- Medium: 500

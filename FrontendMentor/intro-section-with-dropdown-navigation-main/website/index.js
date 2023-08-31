@@ -12,7 +12,7 @@ const companyUp = document.getElementById("company-up")
 const featuresMenu = document.querySelector(".features-list")
 const companyMenu = document.querySelector(".company-list")
 
-// Event listeners for dropdown menus buttons
+// Add functionality to dropdown menus
 features.addEventListener("click", function() {
     // Display / hide
     featuresDown.classList.toggle("active")
@@ -24,4 +24,18 @@ company.addEventListener("click", function() {
     companyDown.classList.toggle("active")
     companyUp.classList.toggle("active")
     companyMenu.classList.toggle("active")
+});
+
+
+// Extract mobile menu buttons and mobile navigation
+const menu = document.getElementById("menu")
+const closeMenu = document.getElementById("close-menu")
+const navigation = document.getElementById("nav")
+
+// Add functionality to mobile navigation
+menu.addEventListener("click", function(){
+    navigation.classList.toggle("active")
+});
+closeMenu.addEventListener("click", function() {
+    navigation.classList.toggle("active")
 });
