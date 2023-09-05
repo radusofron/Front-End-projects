@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+:root{
+    --background-green: #E3F1EE;
+    --border-green: #CEE5E4;
+    --greyish-green: #E5F0EC;
+
+    --fs-paragraph: 14px;
+    --fs-details: 10px;
+
+    --fw-medium: 500;
+    --fw-semibold: 600;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--background-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.testimonials{
+    min-width: 50%;
+    width: 600px;
+    max-width: 90%;
+    padding: 60px;
+    border: 20px solid var(--border-green);
+    background-color: white;
+}
+section.testimonials .top-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+.top-container .logo-container{
+    width: 20%;
+}
+.top-container .logo-container img{
+    display: none;
+}
+.top-container .logo-container img.active{
+    width: 100%;
+    display: block;
+}
+.top-container p.text{
+    display: none;
+}
+.top-container p.text.active{
+    height: 75px;
+    max-height: 75px;
+    display: block;
+    width: 80%;
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-semibold);
+}
+section.testimonials .middle-container{
+    margin: 15px 0px;
+    padding: 15px 0px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.middle-container .points{
+    display: flex;
+    gap: 10px;
+}
+.middle-container .points span{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--greyish-green);
+}
+.middle-container .points span.active{
+    background-color: black;
+}
+.middle-container .person-details p{
+    font-size: var(--fs-details);
+    font-weight: var(--fw-semibold);
+}
+.middle-container .person-details p.name{
+    text-transform: uppercase;
+}
+section.testimonials .bottom-container{
+    display: flex;
+    gap: 20px;
+}
+.bottom-container .left-arrow-container, .right-arrow-container{
+    cursor: pointer;
+}
