@@ -6,7 +6,7 @@
 
 ### My solution
 
-In addition to HTML and CSS, I have used JavaScript for the user to be able to change the app and its testimonial using the arrows.
+In addition to HTML and CSS, I have used JavaScript to allow users to change the app and its testimonials using the arrows.
 
 `Resolution: 1280 x 720`
 
