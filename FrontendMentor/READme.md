@@ -1,7 +1,27 @@
-# Frontend Mentor Challenges
+# Frontend Mentor
 
-This folder contains challenges offered by the [Frontend Mentor](https://www.frontendmentor.io) website.
+- offers a variety of front-end projects, ranging in complexity.
 
-- Frontend Mentor **provides** designs for different screen sizes. Therefore, these projects are responsive.
+- provides designs for different screen sizes.
 
-- Frontend Mentor does not provide access to the design files for the most accurate design implementations.
+- does not provide access to the design files for the most accurate implementations.
+
+## Folder structure
+
+Every subfolder contains the solution to a project.
+
+## Challenges
+
+#### intro-section-with-dropdown-navigation-main
+
+- technologies used: `HTML, CSS, JavaScript`
+- preview:
+
+  <img src="./intro-section-with-dropdown-navigation-main/design/desired-design/desktop-preview.jpg" width=350px height=auto>
+
+#### newsletter-sign-up-with-success-message-main
+
+- technologies used: `HTML, CSS, JavaScript`
+- preview:
+
+  <img src="./newsletter-sign-up-with-success-message-main/design/desired-design/desktop-preview.jpg" width=350px height=auto>
