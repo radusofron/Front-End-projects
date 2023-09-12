@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --background-grey: #E5E7E9;
+    --shadow-grey: #B2B4B6;
+    --font-grey: #E3E5E9;
+    --red: #FE252C;
+    --black: #040506;
+
+    --fs-paragraph: 15px;
+    --fs-author: 13px;
+
+    --fw-medium: 400;
+    --fw-semibold: 500;
+    --fw-bold: 600;
+    --fw-extra-bold: 700;
+}   
+
+body{
+    min-height: 100vh;
+    border-bottom: 100px solid var(--red);
+    background-color: var(--background-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* IMAGE */
+main .image-container{
+    position: relative;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px var(--shadow-grey);
+}
+main .image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/* TEXT */
+main .image-container .text-container{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+main .image-container .text-container p{
+    font-weight: var(--fw-extra-bold);
+    color: var(--font-grey);
+    text-transform: uppercase;
+}
+main .image-container .text-container p.quote{
+    font-size: var(--fs-paragraph);
+    text-align: center;
+}
+main .image-container .text-container p.author{
+    font-size: var(--fs-author);
+    font-style: italic;
+}
+/* POINTS PANEL */
+.points{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.points .point{
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    background-color: var(--black);
+}
+.points .point.active{
+    background-color: var(--red);
+    transform: scale(1.35);
+}
+/* SIDE IMAGES */
+.left-image-container{
+    position: absolute;
+    top: calc((100% - 450px)/2);
+    left: -300px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px var(--shadow-grey);
+}
+.right-image-container{
+    position: absolute;
+    top: calc((100% - 450px)/2);
+    right: -300px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px var(--shadow-grey);
+}
+.left-image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: blur(2px);
+}
+.right-image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: blur(2px);
+}
