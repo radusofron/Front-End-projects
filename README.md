@@ -12,7 +12,7 @@ This repository contains my collection of solved front-end projects, created bas
 
 ## iCodeThis
 
-- offers a front-end challenge per day,typically with low complexity.
+- offers a front-end challenge per day, typically with low complexity.
 
 - does not provide designs for different screen sizes.
 
