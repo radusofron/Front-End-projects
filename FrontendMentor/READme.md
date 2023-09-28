@@ -32,3 +32,5 @@ Every subfolder contains the solution to a project.
 - preview:
 
   <img src="./social-media-dashboard-with-theme-switcher-master/design/desired-design/desktop-preview.jpg" width=350px height=auto>
+
+- website link: [https://social-media-dashboard-radu-sofron.netlify.app/website/](https://social-media-dashboard-radu-sofron.netlify.app/website/)
