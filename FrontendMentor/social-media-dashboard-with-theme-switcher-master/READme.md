@@ -7,6 +7,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 - [The challenge](#the-challenge)
 - [Desired design](#desired-design)
 - [My solution](#my-solution)
+- [Solution URL](#solution-url)
 - [Screenshots](#screenshots)
   - [1920 x 1080](#screen-width-1920px)
   - [1280 x 720](#screen-width-1280px)
@@ -39,6 +40,10 @@ Users should be able to:
 Technologies used: HTML, CSS and JavaScript.
 
 Files can be found in **website** directory.
+
+## Solution URL
+
+[https://social-media-dashboard-radu-sofron.netlify.app/website/](https://social-media-dashboard-radu-sofron.netlify.app/website/)
 
 ## Screenshots
 
