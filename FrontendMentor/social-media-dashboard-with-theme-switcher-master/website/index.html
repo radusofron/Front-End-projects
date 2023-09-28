@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="index.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="left-side">
+      <h1>
+        Social Media Dashboard
+      </h1>
+      <p>
+        Total Followers: 23,004
+      </p>
+    </div>
+    <div class="design-line"></div>
+    <div class="right-side">
+      <span>Dark Mode</span>
+      <input type="checkbox" id="theme-checkbox">
+      <label class="theme-switcher" for="theme-checkbox">
+        <div class="theme-switcher-circle"></div>
+      </label>
+    </div>
+  </header>
+
+
+  <section class="general-cards">
+
+    <div class="general-card facebook">
+      <div class="platform-and-username">
+        <img src="../images/icon-facebook.svg">
+        <p class="username">@nathanf</p>
+      </div>
+      <div class="followers">
+        <p class="number">
+          1987
+        </p>
+        <p class="text">
+          Followers
+        </p>
+      </div>
+      <div class="fluctuation">
+        <img src="../images/icon-up.svg">
+        <span class="text">12 Today</span>
+      </div>
+    </div>
+
+    <div class="general-card twitter">
+      <div class="platform-and-username">
+        <img src="../images/icon-twitter.svg">
+        <p class="username">@nathanf</p>
+      </div>
+      <div class="followers">
+        <p class="number">
+          1044
+        </p>
+        <p class="text">
+          Followers
+        </p>
+      </div>
+      <div class="fluctuation">
+        <img src="../images/icon-up.svg">
+        <span class="text">99 Today</span>
+      </div>
+    </div>
+
+    <div class="general-card instagram">
+      <div class="platform-and-username">
+        <img src="../images/icon-instagram.svg">
+        <p class="username">@realnathanf</p>
+      </div>
+      <div class="followers">
+        <p class="number">
+          11k
+        </p>
+        <p class="text">
+          Followers
+        </p>
+      </div>
+      <div class="fluctuation">
+        <img src="../images/icon-up.svg">
+        <span class="text">1099 Today</span>
+      </div>
+    </div>
+
+    <div class="general-card youtube">
+      <div class="platform-and-username">
+        <img src="../images/icon-youtube.svg">
+        <p class="username">Nathan F.</p>
+      </div>
+      <div class="followers">
+        <p class="number">
+          8239
+        </p>
+        <p class="text">
+          Subscribers
+        </p>
+      </div>
+      <div class="fluctuation">
+        <img src="../images/icon-down.svg">
+        <span class="text bad">144 Today</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <article class="today-overview">
+
+    <h2>Overview - Today</h2>
+
+    <section class="today-overview-cards">
+
+      <div class="today-overview-card">
+        <p class="name">
+          Page Views
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-facebook.svg">
+        </div>
+        <p class="number">
+          87
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-up.svg">
+          <span class="text">
+            3%
+          </span>
+        </div>
+      </div>
+
+      <div class="today-overview-card">
+        <p class="name">
+          Likes
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-facebook.svg">
+        </div>
+        <p class="number">
+          52
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-down.svg">
+          <span class="text bad">
+            2%
+          </span>
+        </div>
+      </div>
+
+      <div class="today-overview-card">
+        <p class="name">
+          Likes
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-instagram.svg">
+        </div>
+        <p class="number">
+          5462
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-up.svg">
+          <span class="text">
+            2257%
+          </span>
+        </div>
+      </div>
+
+      <div class="today-overview-card">
+        <p class="name">
+          Profile Views
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-instagram.svg">
+        </div>
+        <p class="number">
+          52k
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-up.svg">
+          <span class="text">
+            1375%
+          </span>
+        </div>
+      </div>
+
+      <div class="today-overview-card">
+        <p class="name">
+          Retweets
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-twitter.svg">
+        </div>
+        <p class="number">
+          117
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-up.svg">
+          <span class="text">
+            303%
+          </span>
+        </div>
+      </div>
+
+      <div class="today-overview-card">
+        <p class="name">
+          Likes
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-twitter.svg">
+        </div>
+        <p class="number">
+          507
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-up.svg">
+          <span class="text">
+            553%
+          </span>
+        </div>
+      </div>
+
+      <div class="today-overview-card">
+        <p class="name">
+          Likes
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-youtube.svg">
+        </div>
+        <p class="number">
+          107
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-down.svg">
+          <span class="text bad">
+            19%
+          </span>
+        </div>
+      </div>
+
+      <div class="today-overview-card">
+        <p class="name">
+          Total Views
+        </p>
+        <div class="icon-container">
+          <img src="../images/icon-youtube.svg">
+        </div>
+        <p class="number">
+          1407
+        </p>
+        <div class="fluctuation">
+          <img src="../images/icon-down.svg">
+          <span class="text bad">
+            12%
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+  </article>
+
+</body>
+
+</html>
